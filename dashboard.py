@@ -17,7 +17,7 @@ st.set_page_config(
 # LOAD DATA
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/coursera_courses_dashboard.csv")
+    df = pd.read_csv("coursera_courses_dashboard.csv")
     return df
 
 df_clean = load_data()
